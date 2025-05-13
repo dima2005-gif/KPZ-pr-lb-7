@@ -58,37 +58,131 @@
 Запустимо його за допомогою команди: ```pnpm run dev```
 
 ### Тепер результат:
-## Ось наші сутності
+# Початкова сторінка
 
-![check_list](https://github.com/user-attachments/assets/06eb83e5-4eeb-4ed8-9e92-f7eaeb18825e)
+![start_page](https://github.com/user-attachments/assets/8c456e4e-cfe0-4381-9ca8-0fc605aeebfa)
 
-## Тепер спробуємо замінити сутності, тобто змінити їхній зміст
+Тепер створемо декілька сутностей.
 
-![check_update](https://github.com/user-attachments/assets/c244c445-35e3-4cf3-981f-ac98b9e22cf3)
+# Створення сутності Create
+Для цього натиснемо кнопку `Створити новий екземпляр`
 
-## Перевіримо паралельно на Postman
+![page_create](https://github.com/user-attachments/assets/7b861990-4c22-4555-b814-2c086e0cae7f)
 
-![check_update_postman](https://github.com/user-attachments/assets/1570ab04-62d3-4d7d-8952-5d160182eed6)
+Натискаємо кнопку `Створити`.
+
+Ось початкова сторінка з нашою сутністю.
+
+![create_entities](https://github.com/user-attachments/assets/98cc921b-ffde-4105-91e0-9feaed051910)
+
+Перевіримо у pgAdmin таблицю `post`
+
+# До
+
+![before_create_entities](https://github.com/user-attachments/assets/fcea6ef5-a2a9-47dc-8481-1deb5f45c652)
+
+# Після
+
+![after_create_entities](https://github.com/user-attachments/assets/3aaa1b40-cded-49a2-99ef-506495c76105)
+
+Cтворемо ще пару сутностей.
+
+# Перегляд сутності Read
+
+Ось наша сторінка з сутностями
+
+![main_page](https://github.com/user-attachments/assets/576a11f7-44f9-4b04-8959-14ef63c489f2)
+
+В PostgreSQL
+
+![pgadmin_for_read](https://github.com/user-attachments/assets/892994f0-81b9-4f3e-bede-ad8f5751d198)
+
+Так прочитаємо дельтано про сутність `Dima Velichko`, для цього натиснемо кнопку `Детально`
+
+![read_entities](https://github.com/user-attachments/assets/ba7738d9-f0c1-44e2-a8ed-dcec12b93d5b)
+
+Переглянемо, що у консолі. Для цього натиснемо `F12`
+
+![console](https://github.com/user-attachments/assets/ecf71ceb-ef48-4c2c-96e5-756f168c66ab)
+
+Тепер якщо ми натиснемо на конкретну сутність аби переглянути детально:
+
+![console_read](https://github.com/user-attachments/assets/b22cbfc5-eafa-4303-8b4f-22540a10e6aa)
+
+# Оновлення сутності Update
+Нехай ми оновимо сутність `Vlad Ladanyak`, натиснемо кнопку `Редагувати`, але перед цим зафіксуємо попередній стан.
+
+Сайт і консоль
+
+![page_before_update](https://github.com/user-attachments/assets/d13a17a9-580f-450a-b7b2-8de81775f5bf)
+
+PostgreSQL
+
+![pgadmin_for_read](https://github.com/user-attachments/assets/ca8098e8-9b1c-4166-8ac7-7e0deb3e792b)
+
+Тепер можемо редагувати.
+
+# До
+
+![before_update_name](https://github.com/user-attachments/assets/13ecb4e4-19d4-476e-b962-1a5a0556166c)
+
+![before_update_desc](https://github.com/user-attachments/assets/08567cb5-0efc-4f06-9cd7-7b9b26ba8aef)
+
+# Після
+
+![after_update_name](https://github.com/user-attachments/assets/2370a5dd-adea-4a9d-83d0-1842dd69cbeb)
+
+![after_update_desc](https://github.com/user-attachments/assets/0184b589-5756-4731-abc4-e2f6d3703e3d)
+
+Повідомлення про успішність оновлення
+
+![update_success](https://github.com/user-attachments/assets/b9b5ac94-ef07-4c00-9d3e-3dcd4f85138d)
+
+# Оновлена сторінка після редагування
+
+![page_after_update](https://github.com/user-attachments/assets/ab0b38a0-a5a2-47dd-88c1-fe1c7de0f76b)
+
+![page_after_update_2](https://github.com/user-attachments/assets/62f0d761-184e-4f4f-915b-b0ebb6f5da5f)
+
+PostgreSQL
+
+![postgres_after_update](https://github.com/user-attachments/assets/359b8045-0004-4f3b-9854-19d04e7b2021)
+
+Як бачимо сутність оновилась.
+
+# Видалення сутності Delete
+Тепер видалемо сутність. Наприклад видалимо сутність `Wojciechovsky Alexander`.
+
+Для уього натиснемо кнопку `Видалити`, але перед цим зафіксуємо попередній вигляд
+
+Сайт
+
+![page_after_update_2](https://github.com/user-attachments/assets/39113ab0-cff5-41b1-a147-8dc1ebec2f8e)
+
+PostgreSQL
+
+![postgres_after_update](https://github.com/user-attachments/assets/359b8045-0004-4f3b-9854-19d04e7b2021)
+
+Тепер можемо видаляти
+
+Підтвердити видалення?
+
+![delete_confirmation](https://github.com/user-attachments/assets/c88461cd-a5a9-47ce-9005-604ff3d874ae)
+
+![successful_delete](https://github.com/user-attachments/assets/1f2f37ff-37b2-4edb-a998-ee8287e1adf5)
 
 
-## Тепер перевіремо створення нової сутності
-![create_new](https://github.com/user-attachments/assets/54b8d7d3-a1c7-4cc7-ba61-1d98c2a9af93)
+Пітверджуємо і переглянемо, що відбулося 
 
-## Тепер перевіяємо чи з'явився він у списку
-![check_create_new](https://github.com/user-attachments/assets/ec68d264-7da0-4ae2-8d56-07bc5c7adcca)
+Сайт 
 
-## Тепер на Postman
-![check_create_new_postman](https://github.com/user-attachments/assets/49ab260f-b6bc-4d0f-9ef0-7976bcfffea4)
+![page_after_delete](https://github.com/user-attachments/assets/82542cf4-881d-4bc7-bd94-da8e062d758c)
 
-## Тепер перевіремо видалення сутностей
-Видалемо сутність ```Dima Velichko```
+PostgreSQL
 
-![check_delete](https://github.com/user-attachments/assets/3e3e04c8-8fbf-4179-914c-5ea2bf15629d)
+![postgres_after_delete](https://github.com/user-attachments/assets/2c8bd692-c3dd-46f2-87dc-5db3d9d33bd5)
 
-## Тепер у Postman
-![check_delete_postman](https://github.com/user-attachments/assets/7237a68d-f9d6-43b2-bfc8-6b3ec3cef8d0)
-
-Як басимо усі операції CRUD  працюють вдало.
+Як бачимо усі операції CRUD  працюють вдало.
 
 ## Загальний висновок
 
