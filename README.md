@@ -6,8 +6,10 @@
 ### Back end
 Відкриємо його і перш за все зайдемо у файл ```.env```.
 
+![env_jwt](https://github.com/user-attachments/assets/cb237c35-2943-46b1-9d2d-1a7bf87ef71d)
+
 Тут звертаємо увагу на рядок ```JWT_EXPIRATION```, за дефолтом тут стоїть 15 хвилин, змінюємо це значення на 60 хвилин.
-![env_jwt](https://github.com/user-attachments/assets/ee4b2e12-e235-4a54-9605-d745cf945132)
+
 
 Тепер якщо у нас докер контейнери є, то запускаємо Docker.
 
@@ -15,7 +17,7 @@
 
 Після цього переходимо у Postman і робимо запит у каталозі ```auth\login``` ```POST``` запит для отримання токена.
 
-![postman_token](https://github.com/user-attachments/assets/c21ecbd6-1d05-4388-a419-7634dbea83c4)
+![postman_token](https://github.com/user-attachments/assets/aa043d1b-0bcc-441e-9300-2b3c5d98a95d)
 
 
 Тепер цей токен ставимо у файл ```.env``` у фронт-енді.
@@ -24,10 +26,12 @@
 
 Тепер відкриємо його. Додакмо у файл ```.env``` і вставимо такі рядки перше з яких це локальна адреса, а другий наш токен.
 
-![env_front](https://github.com/user-attachments/assets/dc90b348-1353-4815-a865-28f53953047b)
+![env_front](https://github.com/user-attachments/assets/46c77ffb-e4b0-4907-a53c-3be9fd3109c1)
+
 
 Далі створюємо файл ```index.ts``` у каталозі ```api``` який у свою чергу знаходиться у каталозі ```src```.
-![src_api_index](https://github.com/user-attachments/assets/729b9888-52e3-498a-9555-ad6e4ce80751)
+
+![src_api_index](https://github.com/user-attachments/assets/e948ce1a-0a3f-4c3b-a89f-7374341c50c4)
 
 Вставимо у цей файл ось такий зміст
 ![index_api](https://github.com/user-attachments/assets/bca1ceb8-f37a-451b-be8a-d9d0245de4cc)
