@@ -186,6 +186,53 @@ PostgreSQL
 
 ![postgres_after_delete](https://github.com/user-attachments/assets/2c8bd692-c3dd-46f2-87dc-5db3d9d33bd5)
 
+## Додавання нового JWT токену і перевірка роботи:
+P.S. Попередня БД була така port=5432 тобто це власноруч створена БД у PostgreSQL
+
+По перше внесемо деякі зміни у коді
+
+![posts_ts](https://github.com/user-attachments/assets/03f7254e-cd3c-461f-87ab-31d8b2c93025)
+
+Потім у Postman зробимо запит.
+![new_jwt](https://github.com/user-attachments/assets/45af80bd-ffd5-4018-abf5-2afa84c2d2e4)
+
+Копіюємо наш токен і вставляємо його у файл 
+
+![_env](https://github.com/user-attachments/assets/2e87413e-0aea-4cff-847f-ddee6c91dd79)
+
+Ще змінимо ще один файл
+
+![axios](https://github.com/user-attachments/assets/c9c79aaf-752d-4f78-a816-cbe3a70bfc82)
+
+Тепер запустимо наш проект. Ось наша сторінка
+
+![main_page_new](https://github.com/user-attachments/assets/9f503995-eaaf-41e5-b8c3-7259dac0d1a7)
+
+![main_page_new_1](https://github.com/user-attachments/assets/70b01d76-f152-4997-a3cb-f8c47c8bc6a9)
+
+![main_page_new_2](https://github.com/user-attachments/assets/d8a9345a-4dd9-4527-be2d-01e3379a8133)
+
+# Сторінка Детально
+
+![about_entities_1](https://github.com/user-attachments/assets/5e074cff-2621-4855-b475-545a296f2550)
+![about_entities_2](https://github.com/user-attachments/assets/71327bdd-b216-4189-ad1f-5c020c6003a1)
+
+# Редагувати
+
+![update_new_1](https://github.com/user-attachments/assets/6fac3a9f-8e3b-4341-bfef-e0ed41a0a6c4)
+![update_new_2](https://github.com/user-attachments/assets/ae30ee26-a1f3-48c5-951d-9ded9990be96)
+
+# Видалити
+
+![delete_new_1](https://github.com/user-attachments/assets/d6f55ff7-bbcf-4aa3-8233-e4e2f17298ee)
+![delete_new_2](https://github.com/user-attachments/assets/41e078b1-ed0e-4475-8cc0-9a6fab8ec6ee)
+
+# Створення
+
+![create_new_1](https://github.com/user-attachments/assets/453ea2f5-0bcc-43fa-a5c3-f670dcfd475a)
+![create_new_2](https://github.com/user-attachments/assets/cecf8214-4cc2-4c1b-a35d-29427cdae02d)
+
+
 Як бачимо усі операції CRUD  працюють вдало.
 
 ## Загальний висновок
